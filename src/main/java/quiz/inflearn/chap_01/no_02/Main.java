@@ -1,4 +1,4 @@
-package quiz.string.no_02;
+package quiz.inflearn.chap_01.no_02;
 
 import java.util.Scanner;
 
