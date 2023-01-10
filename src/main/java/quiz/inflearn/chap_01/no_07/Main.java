@@ -1,17 +1,16 @@
-package quiz.inflearn.chap_01.no_06;
+package quiz.inflearn.chap_01.no_07;
 
 import java.util.Scanner;
 
 public class Main {
     public String solution(String str) {
-        StringBuilder answer = new StringBuilder();
-        for(int i = 0; i < str.length(); i++){
-            if (str.indexOf(str.charAt(i)) == i) {
-                answer.append(str.charAt(i));
-            }
+        String answer = "NO";
+        String reversedStr = new StringBuilder(str).reverse().toString();
+        if (str.equals(reversedStr)) {
+            answer = "YES";
         }
 
-        return answer.toString();
+        return answer;
     }
 
     public static void main(String[] args) {
